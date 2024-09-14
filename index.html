@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Home - EcoDeals E-Commerce Website</title>
+  </head>
+  <body>
+    <div class="top_nav">
+      <div class="container top_nav_container">
+        <div class="top_nav_wrapper">
+          <p class="tap_nav_p">
+            Summer Sale For All Women Wear And Free Express Delivery - OFF 50%!
+          </p>
+          <a href="#" class="top_nav_link">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="./index.html" class="nav_logo">EcoDeals</a>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="./index.html" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+          <li class="nav_item">
+            <a href="./sign-up.html" class="nav_link">Sign up</a>
+          </li>
+        </ul>
+        <div class="nav_items">
+          <form action="#" class="nav_form">
+            <input
+              type="text"
+              class="nav_input"
+              placeholder="search here...."
+            />
+            <img src="./image/search.png" alt="" class="nav_search" />
+          </form>
+          <img src="./image/heart.png" alt="" class="nav_heart" />
+          <a href="./cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+          </a>
+        </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/cart.html" class="mobile_nav_link">Cart</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="container header_container">
+        <div class="header_filter">
+          <a href="#" class="header_filter_link">Woman’s Fashion</a>
+          <a href="#" class="header_filter_link">Men’s Fashion</a>
+          <a href="#" class="header_filter_link">Electronics</a>
+          <a href="#" class="header_filter_link">Home & Lifestyle</a>
+          <a href="#" class="header_filter_link">Medicine</a>
+          <a href="#" class="header_filter_link">Sports & Outdoor</a>
+          <a href="#" class="header_filter_link">Baby’s & Toys</a>
+          <a href="#" class="header_filter_link">Groceries & Pets</a>
+          <a href="#" class="header_filter_link">Health & Beauty</a>
+        </div>
+        <img src="./image/banner.jpg" alt="" class="header_img" />
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">Today's</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">Flash Sale</h3>
+          <p id="demo"></p>
+        </div>
+
+        <!-- Swiper -->
+
+        <!-- Products Section -->
+        <section class="section">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Product cards will be dynamically inserted here -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="view-all-container" style="display: none">
+            <a href="all-products.html" class="container_btn_a"
+              >View All Products</a
+            >
+          </div>
+        </section>
+      </div>
+      <!-- Best Seller Products Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section_category">
+            <p class="section_category_p">This Month</p>
+          </div>
+          <div class="section_header">
+            <h3 class="section_title">Best Selling Products</h3>
+            <p id="demo"></p>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/penset.jpeg"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">48 Shades Sketch Penset</h3>
+                    <p class="card_price">₹1,299</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">99+ Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/headphones.webp"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">Boat Rockerz 350 Headset</h3>
+                    <p class="card_price">₹2,299</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">200+ Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/monitor.jpeg"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">Acer Monitor</h3>
+                    <p class="card_price">₹9,299</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">299+ Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/smartwatch.webp"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">Boat SmartWatch</h3>
+                    <p class="card_price">₹2,399</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">599+ Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/menSet.jpeg"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">Men Beach Wear Set</h3>
+                    <p class="card_price">₹999</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">(400+ Reviews)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card_top">
+                    <img
+                      src="./image/items/jacket.jpeg"
+                      alt=""
+                      class="card_img"
+                    />
+                    <div class="card_top_icons">
+                      <img
+                        src="./heart-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                      <img
+                        src="./location-icon.svg"
+                        alt=""
+                        class="card_top_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card_body">
+                    <h3 class="card_title">Vogue Men Jacket</h3>
+                    <p class="card_price">₹5,299</p>
+                    <div class="card_ratings">
+                      <div class="card_stars"></div>
+                      <p class="card_rating_numbers">400+ Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="trending">
+            <div class="trending_content">
+              <p class="trending_p">categories</p>
+              <h2 class="trending_title">Enhance Your Music Experience</h2>
+              <a href="#" class="trending_btn">Buy Now!</a>
+            </div>
+            <img src="./image/speaker.png" alt="" class="trending_img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section_category">
+            <p class="section_category_p">Our Products</p>
+          </div>
+          <div class="section_header">
+            <h3 class="section_title">Explore Our Products</h3>
+            <p id="demo"></p>
+          </div>
+          <div class="products">
+            <div class="card">
+              <div class="card_top">
+                <img
+                  src="./image/items/dry-fruits.jpeg"
+                  alt=""
+                  class="card_img"
+                />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Dry Fruits Packets</h3>
+                <p class="card_price">₹899</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers">1000+ Reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img src="./image/items/shoes-2.jpeg" alt="" class="card_img" />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Men white and black Shoes</h3>
+                <p class="card_price">₹5,999</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers">600+ Reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img
+                  src="./image/items/wall-hanging.jpeg"
+                  alt=""
+                  class="card_img"
+                />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Wall Hanging Frame</h3>
+                <p class="card_price">₹599</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers">(88)</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img src="./image/items/blazer.webp" alt="" class="card_img" />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Women Blue Blazer</h3>
+                <p class="card_price">₹1,999</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img
+                  src="./image/items/coord-set.webp"
+                  alt=""
+                  class="card_img"
+                />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Printed Co-ord Set</h3>
+                <p class="card_price">₹599</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img
+                  src="./image/items/greenSet.webp"
+                  alt=""
+                  class="card_img"
+                />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Three Pieces Set</h3>
+                <p class="card_price">₹1,599</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img src="./image/items/dress-1.jpeg" alt="" class="card_img" />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Biege Women Set</h3>
+                <p class="card_price">₹1,399</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img
+                  src="./image/items/wall-decor.jpeg"
+                  alt=""
+                  class="card_img"
+                />
+                <div class="card_top_icons">
+                  <img src="./heart-icon.svg" alt="" class="card_top_icon" />
+                  <img src="./location-icon.svg" alt="" class="card_top_icon" />
+                </div>
+              </div>
+              <div class="card_body">
+                <h3 class="card_title">Plate Wall Hanging Decor</h3>
+                <p class="card_price">₹899</p>
+                <div class="card_ratings">
+                  <div class="card_stars"></div>
+                  <p class="card_rating_numbers"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section_category">
+            <p class="section_category_p">Featured</p>
+          </div>
+          <div class="section_header">
+            <h3 class="section_title">New Arrivals</h3>
+          </div>
+          <div class="gallery">
+            <div class="gallery_item gallery_item_1">
+              <img
+                src="./image/gallery/gallery-1.png"
+                alt=""
+                class="gallery_item_img"
+              />
+              <div class="gallery_item_content">
+                <div class="gallery_item_title">Playstation 5</div>
+                <p class="gallery_item_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="#" class="gallery_item_link">SHOP NOW</a>
+              </div>
+            </div>
+            <div class="gallery_item gallery_item_2">
+              <img
+                src="./image/gallery/gallery-2.png"
+                alt=""
+                class="gallery_item_img"
+              />
+              <div class="gallery_item_content">
+                <div class="gallery_item_title">Playstation 5</div>
+                <p class="gallery_item_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="#" class="gallery_item_link">SHOP NOW</a>
+              </div>
+            </div>
+            <div class="gallery_item gallery_item_3">
+              <img
+                src="./image/gallery/gallery-3.png"
+                alt=""
+                class="gallery_item_img"
+              />
+              <div class="gallery_item_content">
+                <div class="gallery_item_title">Playstation 5</div>
+                <p class="gallery_item_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="#" class="gallery_item_link">SHOP NOW</a>
+              </div>
+            </div>
+            <div class="gallery_item gallery_item_4">
+              <img
+                src="./image/gallery/gallery-4.png"
+                alt=""
+                class="gallery_item_img"
+              />
+              <div class="gallery_item_content">
+                <div class="gallery_item_title">Playstation 5</div>
+                <p class="gallery_item_p">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+                <a href="#" class="gallery_item_link">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container services_container">
+          <div class="service">
+            <img src="./image/icons/service-1.png" alt="" class="service_img" />
+            <h3 class="service_title">FAST AND FREE DELIVERY</h3>
+            <p class="service_p">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="service">
+            <img src="./image/icons/service-2.png" alt="" class="service_img" />
+            <h3 class="service_title">24/7 SUPPORT</h3>
+            <p class="service_p">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="service">
+            <img src="./image/icons/service-3.png" alt="" class="service_img" />
+            <h3 class="service_title">MONEY BACK GUARANTY</h3>
+            <p class="service_p">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">EcoDeals</a>
+          <div class="footer_p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Stockholm, Sweden</li>
+            <li class="li footer_list_item">email@gmail.com</li>
+            <li class="li footer_list_item">+46 123 456 78</li>
+            <li class="li footer_list_item">+46 72 345 67</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">Copyright EcoDeals 2024. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <svg
+      style="width: 0; height: 0; position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <linearGradient id="half-gold-gradient" x1="0" x2="100%" y1="0" y2="0">
+        <stop offset="50%" stop-color="gold" />
+        <stop offset="50%" stop-color="#ccc" />
+      </linearGradient>
+    </svg>
+  </body>
+</html>
